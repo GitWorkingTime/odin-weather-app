@@ -1,5 +1,5 @@
 async function getWeatherData() {
-    const response = await fetch('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/waterloo?key=[YOUR KEY]');
+    const response = await fetch('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/[LOCATION]?key=[YOUR KEY]');
     const weatherData = await response.json();
     console.log(weatherData);
 
