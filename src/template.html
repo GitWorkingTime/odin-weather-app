@@ -3,11 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./index.js" defer></script>
     <title>Document</title>
 </head>
 <body>
+    <div class="widget">
+        <form>
+            <label for="location-search">
+                <span>Location:</span>
+                <input type="text" class="text" id="location-search">
+            </label>
+            <button class="submit">Submit!</button>
+        </form>
     
+        <div class="weather-box">
+            <div class="overlay hidden" id="overlay">No location</div>
+            <div class="location" id="location">Example</div>
+            <div class="temp-container">
+                <div class="main">
+                    <p class="temp-title">Temp</p>
+                    <p class="temp">0℃</p>
+                </div>
+                <p class="temp-min">Min: -5℃</p>
+                <p class="temp-max">Max: 5℃</p>
+            </div>
+            <div class="condition" id="condition">Condition: Partially Cloudy</div>
+        </div>
+    </div>
 </body>
 </html>
